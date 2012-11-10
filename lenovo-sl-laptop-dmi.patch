@@ -1,0 +1,11 @@
+--- lenovo-sl-laptop.c~	2009-06-10 11:52:02.000000000 +0200
++++ lenovo-sl-laptop.c	2009-06-10 11:53:05.000000000 +0200
+@@ -1308,7 +1308,7 @@
+ 	vdbg_printk(LENSL_INFO, "Unloaded Lenovo ThinkPad SL Series driver\n");
+ }
+ 
+-MODULE_ALIAS("dmi:bvnLENOVO:*:svnLENOVO:*:pvrThinkPad SL*:rvnLENOVO:*");
++MODULE_ALIAS("dmi:bvnLENOVO:*:svnLENOVO*:*:pvrThinkPad SL*:rvnLENOVO:*");
+ 
+ module_init(lenovo_sl_laptop_init);
+ module_exit(lenovo_sl_laptop_exit);

@@ -4,13 +4,12 @@
 Summary:	Lenovo ThinkPad SL Series Exerimental Driver
 Name:		dkms-%{module_name}
 Version:	0.02
-Release:	%mkrel 0.2
+Release:	2
 License:	GPLv2+
 URL:		http://github.com/tetromino/lenovo-sl-laptop/tree/master
 Group:		System/Kernel and hardware
-Source0:	%{module_name}.tar.gz
+Source0:	%{module_name}.tar.bz2
 Patch0:		lenovo-sl-laptop-dmi.patch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 Requires(pre):	dkms
 Requires(post):	dkms
@@ -59,3 +58,17 @@ dkms remove  -m %{module_name} -v %{version}-%{release} --all --rpm_safe_upgrade
 %{module_path}
 /etc/modprobe.d/dkms-lenovo-sl-laptop
 
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.02-0.2mdv2011.0
++ Revision: 617790
+- the mass rebuild of 2010.0 packages
+
+* Wed Jun 10 2009 Pascal Terjan <pterjan@mandriva.org> 0.02-0.1mdv2010.0
++ Revision: 384767
+- import dkms-lenovo-sl-laptop
+
+
+* Wed Jun 10 2009 Pascal Terjan <pterjan@mandriva.org> 0.02-0.1mdv2010.0
+- first package

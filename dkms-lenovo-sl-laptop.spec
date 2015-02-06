@@ -4,7 +4,7 @@
 Summary:	Lenovo ThinkPad SL Series Exerimental Driver
 Name:		dkms-%{module_name}
 Version:	0.02
-Release:	2
+Release:	3
 License:	GPLv2+
 URL:		http://github.com/tetromino/lenovo-sl-laptop/tree/master
 Group:		System/Kernel and hardware

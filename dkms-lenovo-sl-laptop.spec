@@ -6,7 +6,7 @@ Name:		dkms-%{module_name}
 Version:	0.02
 Release:	3
 License:	GPLv2+
-URL:		http://github.com/tetromino/lenovo-sl-laptop/tree/master
+URL:		https://github.com/tetromino/lenovo-sl-laptop/tree/master
 Group:		System/Kernel and hardware
 Source0:	%{module_name}.tar.bz2
 Patch0:		lenovo-sl-laptop-dmi.patch
